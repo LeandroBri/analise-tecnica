@@ -4,6 +4,8 @@ import dash_bootstrap_components as dbc
 from layout import layout
 from callbacks import register_callbacks
 
+import fix_squeeze_pro  # Apenas chama o script para corrigir o arquivo
+
 # Inicializa o app Dash
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 app.layout = layout
